@@ -1,0 +1,47 @@
+.faq__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.accordion_container {
+  max-width: 1000px;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: transparent;
+  color: var(--secondary-color);
+  cursor: pointer;
+  font-size: 20px;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+
+  .fa-chevron-up{
+    transition: transform .5s ease;
+  }
+
+  &.active {
+    span{
+      color: var(--primary-color);
+    }
+    .fa-chevron-up {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.panel {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.242);
+  padding: 0 18px;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

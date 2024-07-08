@@ -1,0 +1,58 @@
+@import "config";
+@import "_reset";
+@import "_variables";
+@import "_navbar";
+@import "_hero";
+@import "_ourStory";
+@import "_download";
+@import "_workflow";
+@import "_memory";
+@import "_testimonial";
+@import "_faq";
+@import "_contact";
+@import "about";
+@import "responsive";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.section__header {
+  font-size: 34px;
+  color: var(--secondary-color);
+}
+
+.section__paragraph {
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
+
+.learnmore__button {
+  all: unset;
+  font-size: 22px;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+}

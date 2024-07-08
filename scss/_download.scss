@@ -1,0 +1,35 @@
+.download {
+  padding: 40px;
+  background: linear-gradient(to right, #274685 0%, #3db3c5 100%);
+  background-image: linear-gradient(
+    to right,
+    rgb(39, 70, 133) 0%,
+    rgb(61, 179, 197) 100%
+  );
+
+  .download_left {
+    width: 40%;
+    &__title {
+      color: white;
+    }
+  }
+
+  .download_right {
+    &__button {
+      all: unset;
+      padding: 15px 60px;
+      border: 2px solid var(--secondary-color);
+      border-radius: 5px;
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
+.download_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+}

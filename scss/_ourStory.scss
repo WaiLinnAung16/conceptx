@@ -1,0 +1,30 @@
+.story_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100vh;
+
+  .story_left {
+    width: 50%;
+
+    &__img {
+      width: 70%;
+      height: auto;
+    }
+  }
+
+  .story_right {
+    width: 50%;
+
+    &__subHeader {
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      font-style: italic;
+      color: var(--secondary-color);
+    }
+  }
+}

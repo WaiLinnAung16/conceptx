@@ -1,0 +1,93 @@
+.contact_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f8fd;
+  margin-top: 20px;
+}
+
+.map{
+  width: 600px;
+  height: 500px;
+  border: 0;
+}
+
+.contact_headers {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+}
+
+.contact__left {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 20px;
+  gap: 20px;
+
+  &__first {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .contact__left__about {
+      .contact__left__aboutHeader {
+        font-size: 32px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        color: var(--secondary-color);
+      }
+    }
+  }
+
+  &__second {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.contact_menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  &__item {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    list-style: none;
+    color: var(--secondary-color);
+    transition: color ease 0.5s;
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.contact_icon_container {
+  display: flex;
+  margin-top: 5px;
+  gap: 5px;
+
+  .contact_icon {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+
+    i {
+      color: white;
+    }
+  }
+}
